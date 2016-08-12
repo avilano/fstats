@@ -52,7 +52,7 @@ document.getElementById('status').innerHTML = 'You are not logged into Facebook.
 function getStats() {
 FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,age_range,verified,gender,email,picture,location'}, function(response) {
 //console.log(response.bio);
-document.getElementById('status').innerHTML = "<img src="+response.picture.data.url+">" + "<br><div id='statsDiv'><p>You are: " + response.name+"<br><br>Your id is: " + response.id+"<br><br>You are over the : " + response.age_range.min + " age range."+"<br><br>You are: " + response.gender+"<br><br>Your email is: " + response.email +"</p>";
+document.getElementById('status').innerHTML = "<img src="+response.picture.data.url+">" + "<br><div id='statsDiv'><p>You are: " + response.name+"<br><br>Your id is: " + response.id+"<br><br>You are over the: " + response.age_range.min + " age range."+"<br><br>You are: " + response.gender+"<br><br>Your email is: " + response.email +"</p>";
 });
 }
 
