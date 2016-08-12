@@ -1,8 +1,13 @@
 {
-  "name": "openshift-express-example",
+  "name": "facestats",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "webapp that returns facebook stats",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -11,6 +16,10 @@
     "name": "Alberto E. Vilano Reyna",
     "email": "A00515689@live.com",
     "url": "avilano.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avilano"
   },
   "engines": {
     "node": ">= 0.6.0",
@@ -28,5 +37,10 @@
     "morgan": "~1.7.0",
     "nodemon": "^1.10.0",
     "pug": "^2.0.0-beta4"
-  }
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
 }
